@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # adds a "Run workflow" button on the Actions tab
 
 concurrency:
   group: deploy-to-neocities
@@ -15,9 +16,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
       - name: Deploy to Neocities
+        id: deploy
+        continue-on-error: true
         uses: bcomnes/deploy-to-neocities@v2
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-          dist_dir: public
+          dist_dir: dist
+          cleanup: false
+
+      # Neocities sometimes drops a large batch. Try once more after a pause;
+      # files that already uploaded are skipped, so the retry is quick.
+      - name: Wait before retry
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy to Neocities (retry)
+        if: steps.deploy.outcome == 'failure'
+        uses: bcomnes/deploy-to-neocities@v2
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          dist_dir: dist
           cleanup: false

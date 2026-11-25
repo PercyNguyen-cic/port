@@ -102,9 +102,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .hero-sub { font-size: var(--t-lede); max-width: 30ch; line-height: 1.4; }
 .hero-cue { color: var(--ash); font-size: var(--t-small); }
 
-/* ---------- Statement + section heads ---------- */
-.statement { padding-block: clamp(96px, 16vw, 240px); }
-.statement-text { font-size: var(--t-statement); line-height: 1.18; letter-spacing: -0.012em; max-width: 26ch; font-weight: 420; }
+/* ---------- Quote + section heads ---------- */
+.quote { padding-block: clamp(110px, 18vw, 280px); }
+.quote-text {
+  margin: 0; font-family: var(--f-display); font-weight: 750; text-transform: uppercase;
+  font-size: clamp(2.6rem, 6.4vw, 7rem); line-height: 0.9; letter-spacing: -0.005em; max-width: 14ch;
+}
+.quote-by { margin-top: 28px; color: var(--ash); font-size: var(--t-lede); }
 
 .section-head {
   display: grid; grid-template-columns: 1fr minmax(0, 34ch); gap: 24px 48px; align-items: end;
@@ -120,7 +124,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---------- Gallery: justified rows, never cropped ----------
    Each piece grows in proportion to its aspect ratio from a zero basis,
    so all pieces in a row end up exactly the same height. */
-.gallery { display: flex; flex-direction: column; gap: var(--row-gap); padding-bottom: var(--row-gap); }
+.gallery { display: flex; flex-direction: column; gap: var(--row-gap); padding-bottom: var(--row-gap); overflow-x: clip; }
+.work-more { padding-top: var(--row-gap); }
 .row { display: flex; gap: var(--gap); align-items: flex-start; }
 .row > .art { flex: var(--r) 1 0; min-width: 0; }
 .row-bleed { width: 100%; }
@@ -183,10 +188,21 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   transform: scaleX(var(--hs-progress, 0)); transform-origin: left;
 }
 
+/* ---------- Inktober strip ---------- */
+.inktober { padding-block: calc(var(--row-gap) * 1.2) var(--row-gap); }
+.strip { display: grid; gap: clamp(12px, 1.6vw, 24px); overflow-x: clip; }
+.strip-row { display: flex; gap: clamp(12px, 1.6vw, 24px); overflow-x: auto; padding-inline: var(--margin); scroll-snap-type: x proximity; scrollbar-width: none; }
+.strip-row::-webkit-scrollbar { display: none; }
+.strip-card { flex: none; width: 62vw; scroll-snap-align: start; }
+.strip-caption { margin-top: 10px; font-size: var(--t-small); color: var(--ash); }
+.strip-day { font-family: var(--f-display); font-weight: 750; font-size: 1.15rem; color: var(--paper); margin-right: 4px; }
+.strip.is-scrubbed .strip-row { overflow: visible; width: max-content; scroll-snap-type: none; }
+.strip.is-scrubbed .strip-card { width: clamp(180px, 17vw, 300px); }
+
 /* ---------- Course ---------- */
 .course {
   display: grid; grid-template-columns: 7fr 5fr; gap: clamp(32px, 5vw, 80px); align-items: center;
-  padding-block: calc(var(--row-gap) * 1.5);
+  padding-block: var(--row-gap); border-block: 1px solid var(--smoke);
 }
 .kicker { color: var(--ash); margin-bottom: 18px; }
 .course-title { font-size: clamp(3rem, 6.5vw, 6.5rem); margin-bottom: 28px; }
@@ -251,9 +267,6 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .fawcas-intro, .step { grid-template-columns: 1fr; }
   .step-meta { position: static; }
 }
-.shapes { padding-block: var(--row-gap); border-top: 1px solid var(--smoke); }
-.shapes .row + .row { margin-top: var(--gap); }
-
 /* About */
 .about { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(32px, 5vw, 80px); padding-block: calc(var(--header-h) + clamp(48px, 9vw, 140px)) var(--row-gap); }
 .about-lede { font-size: var(--t-statement); line-height: 1.18; margin-block: 40px 32px; max-width: 22ch; }

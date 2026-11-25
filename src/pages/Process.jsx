@@ -10,7 +10,6 @@ const STEPS = [
   { n: '04', name: 'Final', slug: 'fawcas-final', text: 'The finished piece.' },
 ];
 const fawcas = STEPS.map((s) => ({ ...art(s.slug), title: `${s.n} ${s.name}`, note: 'Fawcas' }));
-const shapes = ['shape-crowned', 'shape-rabbit', 'shape-sailor', 'shape-lizard'].map(art);
 
 export default function Process() {
   return (
@@ -19,7 +18,7 @@ export default function Process() {
         <RevealLines as="h1" className="page-title" immediate>
           Process
         </RevealLines>
-        <p className="page-lede">How a character gets made, from the first loose sketch to the finished piece, and how shape alone can tell you who someone is.</p>
+        <p className="page-lede">How a character gets made, from the first loose sketch to the finished piece.</p>
       </section>
 
       <section className="fawcas container" aria-labelledby="fawcas-title">
@@ -42,28 +41,6 @@ export default function Process() {
             </li>
           ))}
         </ol>
-      </section>
-
-      <section className="shapes" aria-labelledby="shape-title">
-        <div className="section-head container">
-          <RevealLines as="h2" id="shape-title" className="section-title">
-            Shape language
-          </RevealLines>
-          <p className="section-note">
-            Each of these characters was designed so you could guess their temperament before knowing anything about them. Rounded
-            shapes, sharp angles, posture and palette do the talking.
-          </p>
-        </div>
-        <div className="row container">
-          {shapes.slice(0, 2).map((a, i) => (
-            <Artwork key={a.slug} item={a} group={shapes} index={i} sizes="(max-width: 700px) 100vw, 50vw" caption={false} />
-          ))}
-        </div>
-        <div className="row container">
-          {shapes.slice(2).map((a, i) => (
-            <Artwork key={a.slug} item={a} group={shapes} index={i + 2} sizes="(max-width: 700px) 100vw, 50vw" caption={false} />
-          ))}
-        </div>
       </section>
 
     </>

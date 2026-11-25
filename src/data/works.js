@@ -32,10 +32,7 @@ const ALT = {
   'fawcas-design': 'Five head studies of Fawcas from different angles, refining his hair and expression.',
   'fawcas-story': 'Rough comic panels testing Fawcas in short dramatic scenes.',
   'fawcas-final': 'Finished illustration of Fawcas standing in darkness with flames engulfing his arms.',
-  'shape-crowned': 'Character sheet: a round, crowned creature with spectacles, annotated sketch beside the coloured version.',
-  'shape-rabbit': 'Character sheet: a rabbit-eared figure in a green cap and headphones mid-leap, with an annotated gesture sketch.',
-  'shape-sailor': 'Character sheet: a broad, bearded sailor with tiny legs, annotated sketch beside the coloured version.',
-  'shape-lizard': 'Character sheet: a lanky lizard-like figure in a pink hoodie and beanie, annotated sketch beside the coloured version.',
+  'about-portrait': 'A red-haired trainer in a cloud-white coat beside a sky-blue bird, painted in loose strokes.',
 };
 
 const TITLE = {
@@ -52,6 +49,10 @@ export function art(slug) {
   const [title = '', note = ''] = TITLE[slug] || [];
   // Folders are named by target width; a file smaller than 960px lives in /960 at its own width.
   const srcset = m.sizes.map((w) => `/media/${w <= 960 ? 960 : w}/${slug}.webp ${w}w`);
+  // Inktober pieces ship as a single small file used for both the strip and the viewer.
+  if (m.src) {
+    return { slug, ...m, ratio: m.w / m.h, title, note, alt: ALT[slug] || '', srcset: `${m.src} ${m.w}w`, full: m.src };
+  }
   return {
     slug,
     ...m,
@@ -76,6 +77,17 @@ export const galleryRows = [
   { kind: 'row', items: ['red-portrait', 'dainsleif', 'three-adventurers'] },
 ];
 export const galleryAll = galleryRows.flatMap((r) => r.items).map(art);
+
+/** Inktober 2023, in day order, captioned with the day's prompt. */
+export const inktober = Object.entries(manifest)
+  .filter(([, m]) => m.kind === 'inktober')
+  .sort(([, a], [, b]) => a.day - b.day)
+  .map(([slug, m]) => ({
+    ...art(slug),
+    title: `Day ${m.day}: ${m.prompt}`,
+    note: 'Inktober 2023',
+    alt: `Inktober 2023, day ${m.day}, prompt "${m.prompt}": a monochrome ink drawing in warm greys.`,
+  }));
 
 export const characters = [
   { name: 'Alexander', sheets: ['alexander-1', 'alexander-2'] },

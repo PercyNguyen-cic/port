@@ -384,5 +384,341 @@
    1920
   ],
   "color": "#e5dfdc"
+ },
+ "about-portrait": {
+  "w": 2400,
+  "h": 3200,
+  "kind": "work",
+  "ext": "jpg",
+  "sizes": [
+   960,
+   1920
+  ],
+  "color": "#c9ccd3"
+ },
+ "inktober-15": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-15.webp",
+  "prompt": "Dagger",
+  "day": 15
+ },
+ "inktober-25": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-25.webp",
+  "prompt": "Dangerous",
+  "day": 25
+ },
+ "inktober-29": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-29.webp",
+  "prompt": "Massive",
+  "day": 29
+ },
+ "inktober-02": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-02.webp",
+  "prompt": "Spiders",
+  "day": 2
+ },
+ "inktober-31": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-31.webp",
+  "prompt": "Fire",
+  "day": 31
+ },
+ "inktober-13": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-13.webp",
+  "prompt": "Rise",
+  "day": 13
+ },
+ "inktober-03": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-03.webp",
+  "prompt": "Path",
+  "day": 3
+ },
+ "inktober-14": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-14.webp",
+  "prompt": "Castle",
+  "day": 14
+ },
+ "inktober-23": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-23.webp",
+  "prompt": "Celestial",
+  "day": 23
+ },
+ "inktober-18": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-18.webp",
+  "prompt": "Saddle",
+  "day": 18
+ },
+ "inktober-06": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-06.webp",
+  "prompt": "Golden",
+  "day": 6
+ },
+ "inktober-04": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-04.webp",
+  "prompt": "Dodge",
+  "day": 4
+ },
+ "inktober-30": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-30.webp",
+  "prompt": "Rush",
+  "day": 30
+ },
+ "inktober-20": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-20.webp",
+  "prompt": "Frost",
+  "day": 20
+ },
+ "inktober-22": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-22.webp",
+  "prompt": "Scratchy",
+  "day": 22
+ },
+ "inktober-24": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-24.webp",
+  "prompt": "Shallow",
+  "day": 24
+ },
+ "inktober-07": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-07.webp",
+  "prompt": "Drip",
+  "day": 7
+ },
+ "inktober-21": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-21.webp",
+  "prompt": "Chains",
+  "day": 21
+ },
+ "inktober-05": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-05.webp",
+  "prompt": "Map",
+  "day": 5
+ },
+ "inktober-26": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-26.webp",
+  "prompt": "Remove",
+  "day": 26
+ },
+ "inktober-28": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-28.webp",
+  "prompt": "Sparkle",
+  "day": 28
+ },
+ "inktober-16": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-16.webp",
+  "prompt": "Angel",
+  "day": 16
+ },
+ "inktober-19": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-19.webp",
+  "prompt": "Plump",
+  "day": 19
+ },
+ "inktober-17": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-17.webp",
+  "prompt": "Demon",
+  "day": 17
+ },
+ "inktober-27": {
+  "w": 960,
+  "h": 1200,
+  "kind": "inktober",
+  "ext": "webp",
+  "sizes": [
+   960
+  ],
+  "color": "#8a7d7c",
+  "src": "/media/inktober/inktober-27.webp",
+  "prompt": "Beast",
+  "day": 27
  }
 }

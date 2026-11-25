@@ -3,7 +3,7 @@ import { ScrambleText } from '../components/motion/ScrambleText';
 import { Artwork } from '../components/Artwork';
 import { art, course, links } from '../data/works';
 
-const portrait = art('skarra-duskmoor');
+const portrait = art('about-portrait');
 
 export default function About() {
   return (
@@ -13,12 +13,12 @@ export default function About() {
           About
         </RevealLines>
         <RevealLines as="p" className="about-lede" immediate delay={0.2}>
-          Percy (Phong) Nguyen is a professional illustrator and splash artist who runs his own art business.
+          I&rsquo;m Percy (Phong) Nguyen, a professional illustrator and splash artist, and I run my own art business.
         </RevealLines>
         <div className="prose">
-          <p>He studies UI/UX and Multimedia Design at Carleton University. His work centres on characters: loud colour, strong silhouettes, and figures caught mid-moment.</p>
+          <p>I study UI/UX and Multimedia Design at Carleton University. My work centres on characters: loud colour, strong silhouettes, and figures caught mid-moment.</p>
           <p>
-            He also teaches other artists how to market and sell their work in his course,{' '}
+            I also teach other artists how to market and sell their work in my course,{' '}
             <a href={course.url} target="_blank" rel="noopener">{course.title}</a>.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function About() {
         </dl>
       </div>
       <div className="about-art">
-        <Artwork item={portrait} sizes="(min-width: 900px) 40vw, 100vw" eager />
+        <Artwork item={portrait} sizes="(min-width: 900px) 40vw, 100vw" eager caption={false} />
       </div>
     </section>
   );

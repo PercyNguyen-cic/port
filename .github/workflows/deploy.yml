@@ -34,7 +34,7 @@ jobs:
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           dist_dir: dist
-          cleanup: false
+          cleanup: true
 
       # Neocities sometimes drops a large batch. Try once more after a pause;
       # files that already uploaded are skipped, so the retry is quick.
@@ -48,4 +48,4 @@ jobs:
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           dist_dir: dist
-          cleanup: false
+          cleanup: true

@@ -254,29 +254,6 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .shapes { padding-block: var(--row-gap); border-top: 1px solid var(--smoke); }
 .shapes .row + .row { margin-top: var(--gap); }
 
-.quiz { padding-block: var(--row-gap) calc(var(--row-gap) * 1.4); border-top: 1px solid var(--smoke); }
-.quiz-head { display: grid; grid-template-columns: 1fr minmax(0, 34ch); gap: 24px 48px; align-items: end; margin-bottom: 40px; }
-.faces, .zones { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); max-width: 760px; }
-.faces { min-height: 120px; margin-bottom: var(--gap); }
-.face { aspect-ratio: 1; overflow: hidden; cursor: grab; transition: transform 0.25s, outline-color 0.2s; outline: 1px solid var(--smoke); outline-offset: -1px; }
-.face img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
-.face:hover { transform: translateY(-3px); }
-.face[aria-pressed='true'] { outline: 2px solid var(--paper); outline-offset: 3px; transform: translateY(-3px); }
-.zone { aspect-ratio: 1; position: relative; border: 1px dashed rgba(235, 230, 220, 0.3); display: grid; place-items: center; overflow: hidden; transition: border-color 0.2s, background 0.2s; }
-.zone img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.zone-label { position: relative; font-family: var(--f-display); font-weight: 750; text-transform: uppercase; font-size: clamp(1.25rem, 2vw, 1.75rem); }
-.zone.is-target { border-color: var(--paper); background: rgba(235, 230, 220, 0.04); }
-.zone.is-wrong { border-color: #d0563f; animation: shake 0.45s; }
-.zone.is-done { border-style: solid; border-color: var(--smoke); cursor: default; }
-.zone.is-done .zone-label { align-self: end; margin-bottom: 8px; background: rgba(7, 6, 8, 0.8); padding: 2px 10px; font-size: 1rem; }
-.quiz-actions { margin-top: 32px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
-.quiz-status { color: var(--ash); margin-right: 16px; font-variant-numeric: tabular-nums; }
-@keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
-@media (max-width: 640px) {
-  .faces, .zones { grid-template-columns: repeat(2, 1fr); }
-  .quiz-head { grid-template-columns: 1fr; }
-}
-
 /* About */
 .about { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(32px, 5vw, 80px); padding-block: calc(var(--header-h) + clamp(48px, 9vw, 140px)) var(--row-gap); }
 .about-lede { font-size: var(--t-statement); line-height: 1.18; margin-block: 40px 32px; max-width: 22ch; }

@@ -1,7 +1,7 @@
 {
  "alexander-1": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -12,8 +12,8 @@
   "color": "#97817e"
  },
  "alexander-2": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -24,8 +24,8 @@
   "color": "#9c9a93"
  },
  "icarus-1": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -36,8 +36,8 @@
   "color": "#9e8c88"
  },
  "icarus-2": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -48,8 +48,8 @@
   "color": "#8e7866"
  },
  "kaida-1": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -60,8 +60,8 @@
   "color": "#533739"
  },
  "vera-1": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -72,8 +72,8 @@
   "color": "#c3c0c4"
  },
  "vera-2": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -84,8 +84,8 @@
   "color": "#aba9aa"
  },
  "zhongshu-1": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -96,8 +96,8 @@
   "color": "#7f6260"
  },
  "zhongshu-2": {
-  "w": 4700,
-  "h": 2000,
+  "w": 3200,
+  "h": 1362,
   "kind": "sheet",
   "ext": "jpg",
   "sizes": [
@@ -108,8 +108,8 @@
   "color": "#551f1d"
  },
  "skarra-duskmoor": {
-  "w": 3000,
-  "h": 4000,
+  "w": 2400,
+  "h": 3200,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -119,8 +119,8 @@
   "color": "#a9aaaa"
  },
  "lineup-trio": {
-  "w": 3487,
-  "h": 2000,
+  "w": 3200,
+  "h": 1835,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -130,8 +130,8 @@
   "color": "#ada8a9"
  },
  "ghost-masks": {
-  "w": 3000,
-  "h": 3797,
+  "w": 2528,
+  "h": 3200,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -203,8 +203,8 @@
   "color": "#dbc0a6"
  },
  "three-adventurers": {
-  "w": 2957,
-  "h": 3651,
+  "w": 2592,
+  "h": 3200,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -224,8 +224,8 @@
   "color": "#a7a3ad"
  },
  "helmet-and-sword": {
-  "w": 4000,
-  "h": 3000,
+  "w": 3200,
+  "h": 2400,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -235,8 +235,8 @@
   "color": "#827b85"
  },
  "veiled": {
-  "w": 3000,
-  "h": 4000,
+  "w": 2400,
+  "h": 3200,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
@@ -266,8 +266,8 @@
   "color": "#85807d"
  },
  "project-hail-mary": {
-  "w": 3400,
-  "h": 1515,
+  "w": 3200,
+  "h": 1426,
   "kind": "work",
   "ext": "jpg",
   "sizes": [
